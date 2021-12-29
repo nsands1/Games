@@ -4,9 +4,9 @@ In order to utilize JAVAFX ensure that your run configuration and Java Build Pat
 IAW the Image_3 and Image_4 located in this project folder. Failure to have JavaFX setup accordingly
 will prevent the application from working.
 Image_3:
-![alt text](github.com/nsands1/Games/blob/main/TicTacToe_Server_Client/Image3.JPG)
+![alt text](https://github.com/nsands1/Games/blob/main/TicTacToe_Server_Client/Image_3.JPG)
 Image_4:
-![alt text](github.com/nsands1/Games/blob/main/TicTacToe_Server_Client/Image4.JPG)
+![alt text](https://github.com/nsands1/Games/blob/main/TicTacToe_Server_Client/Image_4.JPG)
 
 Order Of Operations:
 Run Main.java
