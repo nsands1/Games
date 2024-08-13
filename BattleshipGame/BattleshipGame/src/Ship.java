@@ -1,6 +1,20 @@
+/*************************************************************************************************
+ * File: Ship.java
+ * 
+ * Description: This file contains the Ship class which encapsulates the
+ *              properties of a ship in a Battleship game. Each ship is
+ *              characterized by its size, type (represented by a letter),
+ *              heading (direction), and position (coordinate). The class
+ *              provides methods to access and modify these properties.
+ *
+ * Author: Neil S.
+ * Date Created: August 2nd 2024
+ * Date Last Edited: August 11th 2024
+ ************************************************************************************************/
+
 public class Ship {
     
-    /*
+    /****************************************************************
      * 
      * Aircraft Carrier is of size 5 represented by the letter "A"
      * 
@@ -12,7 +26,7 @@ public class Ship {
      * 
      * Patrol Boat is of size 2 represented by the letter "P"
      * 
-     */
+     ****************************************************************/
 
     private int size;
     private char letter;
@@ -30,6 +44,7 @@ public class Ship {
     public int getSize() {
         return size;
     }
+    
     private void setSize(char letter) {
         switch (letter) {
             case ('A'): this.size = 5;                

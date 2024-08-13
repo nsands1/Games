@@ -1,3 +1,17 @@
+/*************************************************************************************************
+ * File: Computer.java
+ * 
+ * Description: This file contains the implementation of the Computer class
+ *              for a Battleship game. It handles computer-controlled ship 
+ *              placement, attack logic, and maintains the state of chosen 
+ *              and next possible coordinates. It also manages the evaluation
+ *              of game outcomes based on the computer's actions.
+ *
+ * Author: Neil S.
+ * Date Created: August 2nd 2024
+ * Date Last Edited: August 11th 2024
+ ************************************************************************************************/
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -110,33 +124,7 @@ public class Computer {
     public char[][] getBoardB() {
         return board.getBoardB();
     }
-/*
-    public Coordinate getPredictedCoord(Player player) {
-        while (chooseNext.size() != 0) {
-            int randNum = (int)(Math.random() * chooseNext.size());
-            compAttack = chooseNext.get(randNum);
-            while (board.isValidAttack(compAttack) == false && chooseNext.size() != 0) {
-                chooseNext.remove(randNum);
-                randNum = (int)(Math.random() * chooseNext.size());
-                try {
-                    compAttack = chooseNext.get(randNum);
-                } catch (Exception IndexOutOfBoundsException) {
-                    System.out.println("You made it to this error.");
-                    IndexOutOfBoundsException.printStackTrace();
-                }
-            }
-            coordsChosen.add(compAttack);
-            return compAttack;
-        }     
-        compAttack = randomCoordinate();
-        while (board.isValidAttack(compAttack) == false) {
-            compAttack = randomCoordinate();
-        }
-        coordsChosen.add(compAttack);
-        return compAttack;
 
-    }
-*/
     public Coordinate getPredictedCoord(Player player) {
         while (!chooseNext.isEmpty()) {
             int randNum = (int)(Math.random() * chooseNext.size());
@@ -187,7 +175,9 @@ public class Computer {
     }
 
     public boolean verifyCompWin() {
-        if (board.getNumAircraftPlay() == 5 && board.getNumBattleshipPlay() == 4 && board.getNumDestroyerPlay() == 3 && board.getNumSubmarinePlay() == 3 && board.getNumPatrolBoatPlay() == 2) {
+        if (board.getNumAircraftPlay() == 5 && board.getNumBattleshipPlay() == 4 && 
+            board.getNumDestroyerPlay() == 3 && board.getNumSubmarinePlay() == 3 && 
+            board.getNumPatrolBoatPlay() == 2) {
             return true;
         }
         return false;
@@ -235,6 +225,5 @@ public class Computer {
         removeDuplicates();
 
     }
-    
 
 }

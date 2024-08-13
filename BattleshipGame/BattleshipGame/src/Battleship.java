@@ -1,3 +1,16 @@
+/*************************************************************************************************
+ * File: Battleship.java
+ * 
+ * Description: This file contains the main entry point for a Battleship game.
+ *              It handles the setup for the player and computer, manages the
+ *              game loop where players take turns attacking each other, and 
+ *              determines the winner.
+ *
+ * Author: Neil S.
+ * Date Created: August 2nd 2024
+ * Date Last Edited: August 11th 2024
+ ************************************************************************************************/
+
 public class Battleship {
 
     public static void main(String[] args) {

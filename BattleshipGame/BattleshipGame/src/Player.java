@@ -1,3 +1,17 @@
+/*************************************************************************************************
+ * File: Player.java
+ * 
+ * Description: This file contains the Player class for a Battleship game.
+ *              It manages player actions including ship setup, attack initiation,
+ *              and tracking the state of both the player's and the adversary's
+ *              boards. The class uses methods to handle ship placement, validate
+ *              inputs for attacks and directions, and to check game winning conditions.
+ *
+ * Author: Neil S.
+ * Date Created: August 2nd 2024
+ * Date Last Edited: August 11th 2024
+ ************************************************************************************************/
+
 import java.util.Scanner;
 
 public class Player {
@@ -651,7 +665,9 @@ public class Player {
     }
 
     public boolean verifyPlayerWin() {
-        if (board.getNumAircraftComp() == 5 && board.getNumBattleshipComp() == 4 && board.getNumDestroyerComp() == 3 && board.getNumSubmarineComp() == 3 && board.getNumPatrolBoatComp() == 2) {
+        if (board.getNumAircraftComp() == 5 && board.getNumBattleshipComp() == 4 && 
+            board.getNumDestroyerComp() == 3 && board.getNumSubmarineComp() == 3 && 
+            board.getNumPatrolBoatComp() == 2) {
             return true;
         }
         return false;
@@ -690,8 +706,6 @@ public class Player {
         return true;
     }
     
-    
-
     public static boolean validateDirectionInput(char direction) {
         // Convert to lowercase if the input is capitalized
         direction = Character.toLowerCase(direction);

@@ -1,3 +1,18 @@
+/*************************************************************************************************
+ * File: Boards.java
+ * 
+ * Description: This file contains the implementation of the Boards class, 
+ *              which is responsible for managing the game boards in the 
+ *              Battleship game. The class includes methods for initializing 
+ *              the boards, placing ships, verifying attacks, and tracking 
+ *              hits and misses. It also manages the state of both the player's 
+ *              and computer's fleets, keeping track of the number of ships 
+ *              that have been hit or sunk.
+ *
+ * Author: Neil S.
+ * Date Created: August 2nd 2024
+ * Date Last Edited: August 11th 2024
+ ************************************************************************************************/
 public class Boards {
 
     private char[][] boardA = new char[11][11];
@@ -240,7 +255,6 @@ public class Boards {
         return true;
     }
 
-    /* North : n, South : s, East : e, West : w */
     public boolean placeShips(Coordinate coord, Ship ship) {
         int yCor = coord.getY() - 64;
         int xCor = coord.getX();
@@ -319,21 +333,7 @@ public class Boards {
             System.out.println("~~ BANG! ~~\n");
         } 
     }
-    /*
-     * 
-     * Aircraft Carrier is of size 5 represented by the letter "A"
-     * 
-     * Battleship is of size 4 represented by the letter "B"
-     * 
-     * Destroyer is of size 3 represented by the letter "D"
-     * 
-     * Submarine is of size 3 represented by the letter "S"
-     * 
-     * Patrol Boat is of size 2 represented by the letter "P"
-     * 
-     */
-    
-     /* This is you attacking the enemy. */
+
     public char resultHitMissComp(Coordinate coord, Computer opposition) {
         int yCor = coord.getY() - 64;
         int xCor = coord.getX();
@@ -387,7 +387,7 @@ public class Boards {
         }
 
     }
-    /* This is the enemy attacking you. */
+
     public char resultHitMissPlay(Coordinate coord, Player opposition) {
         int yCor = coord.getY() - 64;
         int xCor = coord.getX();
