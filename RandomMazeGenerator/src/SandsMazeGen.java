@@ -5,9 +5,10 @@
  *              with a stack for backtracking. The maze is created by randomly choosing directions 
  *              to move and backtracking when no unvisited cells are available. The result is a 
  *              fully utilized maze grid with a single path from start (S) to finish (F).
+ * 				Best ran in external terminal window for visibility.
  *
  * Author: Neil S.
- * Date Created: August 12th, 2024
+ * Date Created: August 11th, 2024
  * Date Last Edited: August 12th, 2024
  ************************************************************************************************/
 
