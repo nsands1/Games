@@ -145,6 +145,6 @@ ___
 
 ## Example Outputs
 
--![Example_Output_1](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_1.png)
--![Example_Output_2](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_2.png)
--![Example_Output_3](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_3.png)
+-![Example_Output_1](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_1.PNG)
+-![Example_Output_2](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_2.PNG)
+-![Example_Output_3](https://github.com/nsands1/Games/blob/main/Code-A-Mon_Battle_Simulator/img/Example_Output_3.PNG)
